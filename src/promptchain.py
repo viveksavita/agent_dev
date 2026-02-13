@@ -17,7 +17,7 @@ prompt_extract = ChatPromptTemplate.from_template(
 # Prompt 2 : Transform the extracted information into a JSON format
 
 prompt_json = ChatPromptTemplate.from_template(
-"Transform the following technical information into a JSON format with 'cpu' , 'memory' , 'storage' as keys:\n\n{extracted_info}"
+"Transform the following technical information into a JSON format with 'cpu' , 'memory' , 'storage' as keys and just gather values for given in the text , no addition information:\n\n{extracted_info}"
 )
 
 # Building the chain using LCEL
