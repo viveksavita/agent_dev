@@ -59,5 +59,5 @@ coordinator_agent = ( { "request": RunnablePassthrough() ,
                      )
                        
 
-result = coordinator_agent.invoke({"request": "Lets dance in the party tonight?"})
+result = coordinator_agent.invoke({"request": "What is the booking availability for next week?"})
 print(result)
